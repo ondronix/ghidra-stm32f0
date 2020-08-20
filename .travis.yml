@@ -24,3 +24,4 @@ deploy:
   file: dist/*.zip
   skip_cleanup: true
   draft: true
+  edge: true
