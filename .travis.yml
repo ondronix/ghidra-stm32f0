@@ -8,13 +8,12 @@ cache:
     - $HOME/.gradle/wrapper/
     
 install:
-  - mkdir .deps
-  - cd .deps
+  - cd /var/tmp
   - wget https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip
   - unzip ghidra_9.1.2_PUBLIC_20200212.zip
   - rm ghidra_9.1.2_PUBLIC_20200212.zip
   - export GHIDRA_INSTALL_DIR=$PWD/ghidra_9.1.2_PUBLIC
-  - cd ..
+  - cd $HOME
 
 script:
   - gradle
