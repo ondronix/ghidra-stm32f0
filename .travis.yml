@@ -10,9 +10,10 @@ cache:
     - $HOME/.gradle/caches/
     - $HOME/.gradle/wrapper/
     
-script:
-  - jdk_switcher use oraclejdk11
+install:
   - wget https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip
   - unzip ghidra_9.1.2_PUBLIC_20200212.zip
-  - gradle -PGHIDRA_INSTALL_DIR=./ghidra_9.1.2_PUBLIC
+  - export GHIDRA_INSTALL_DIR=./ghidra_9.1.2_PUBLIC
+
+script:
   - ls -la
