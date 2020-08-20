@@ -16,7 +16,7 @@ install:
 
 script:
   - gradle
-  - pwd
+  - cd $TRAVIS_BUILD_DIR
   
 deploy:
   provider: releases
