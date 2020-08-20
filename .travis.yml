@@ -16,14 +16,12 @@ install:
   - export GHIDRA_INSTALL_DIR=$PWD/ghidra_9.1.2_PUBLIC
 
 script:
-  - echo $HOME
   - gradle
-  - export
   
 deploy:
   provider: releases
   api_key: "GITHUB OAUTH TOKEN"
   file_glob: true
-  file: /home/travis/build/ondronix/ghidra-stm32f0/dist/*.zip
+  file: dist/*.zip
   skip_cleanup: true
   draft: true
