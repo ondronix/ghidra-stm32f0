@@ -13,10 +13,12 @@ cache:
 install:
   - wget https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip
   - unzip ghidra_9.1.2_PUBLIC_20200212.zip
+  - rm ghidra_9.1.2_PUBLIC_20200212.zip
   - export GHIDRA_INSTALL_DIR=$PWD/ghidra_9.1.2_PUBLIC
 
 script:
   - gradle
+  - rm -fr $GHIDRA_INSTALL_DIR
   
 deploy:
   provider: releases
