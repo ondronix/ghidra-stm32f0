@@ -45,7 +45,7 @@ import ghidra.program.model.symbol.SourceType;
 /**
  * TODO: Provide class-level documentation that describes what this loader does.
  */
-public class stm32Loader extends AbstractLibrarySupportLoader {
+public class stm32f0Loader extends AbstractLibrarySupportLoader {
 
 	private static class RegLabel {
 		String label;
