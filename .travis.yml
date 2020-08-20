@@ -16,5 +16,5 @@ install:
   - export GHIDRA_INSTALL_DIR=./ghidra_9.1.2_PUBLIC
 
 script:
-  gradle -PGHIDRA_INSTALL_DIR=./ghidra_9.1.2_PUBLIC
+  - gradle -PGHIDRA_INSTALL_DIR=./ghidra_9.1.2_PUBLIC
   - ls -la
