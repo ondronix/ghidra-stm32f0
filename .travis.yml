@@ -1,0 +1,18 @@
+language: java
+
+jdk: openjdk11
+
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+    
+script:
+  - jdk_switcher use oraclejdk11
+  - wget https://ghidra-sre.org/ghidra_9.1.2_PUBLIC_20200212.zip
+  - unzip ghidra_9.1.2_PUBLIC_20200212.zip
+  - gradle -PGHIDRA_INSTALL_DIR=./ghidra_9.1.2_PUBLIC
+  - ls -la
