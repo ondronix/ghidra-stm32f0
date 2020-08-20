@@ -13,10 +13,10 @@ install:
   - unzip ghidra_9.1.2_PUBLIC_20200212.zip
   - rm ghidra_9.1.2_PUBLIC_20200212.zip
   - export GHIDRA_INSTALL_DIR=$PWD/ghidra_9.1.2_PUBLIC
-  - cd $HOME
 
 script:
   - gradle
+  - pwd
   
 deploy:
   provider: releases
