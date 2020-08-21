@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/ondronix/ghidra-stm32f0.svg?branch=master)](https://travis-ci.com/ondronix/ghidra-stm32f0)
+
+
 # ghidra-stm32f0
 
 This is a ghidra extension which is actually loader for the STM32F0 series of microcontrollers
